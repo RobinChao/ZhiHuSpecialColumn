@@ -1,25 +1,25 @@
 //
-//  ProfileInfoController.swift
-//  Work-wx
+//  BaseViewController.swift
+//  ZhiHuSpecialColumn
 //
-//  Created by Robin on 4/22/16.
+//  Created by Robin on 4/25/16.
 //  Copyright © 2016 Robin. All rights reserved.
 //
 
 import UIKit
 
-class ProfileInfoController: BaseViewController {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.edgesForExtendedLayout = .None
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-     
+    
 
 }

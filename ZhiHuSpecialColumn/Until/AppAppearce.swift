@@ -10,6 +10,7 @@ import UIKit
 
 
 func setupAPPAppearce() {
+    UINavigationBar.appearance().translucent = false
     UINavigationBar.appearance().barTintColor = UIColor.hexColor(0x0099f1)
     UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     

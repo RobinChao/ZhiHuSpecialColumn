@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00AB13A81CCE05990050DCE4 /* NSURLSession+SynchronousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB13A71CCE05990050DCE4 /* NSURLSession+SynchronousTask.swift */; };
+		00AB13AA1CCE14770050DCE4 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB13A91CCE14770050DCE4 /* SegmentedController.swift */; };
+		00AB13AC1CCE21F60050DCE4 /* DiscoveryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB13AB1CCE21F60050DCE4 /* DiscoveryListController.swift */; };
+		00AB13AE1CCE23D30050DCE4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB13AD1CCE23D30050DCE4 /* PageViewController.swift */; };
+		00AB13B01CCE27920050DCE4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB13AF1CCE27920050DCE4 /* BaseViewController.swift */; };
 		00F4B7A21CCDD1ED0079A9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4B7A11CCDD1ED0079A9D8 /* AppDelegate.swift */; };
 		00F4B7A91CCDD1ED0079A9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F4B7A81CCDD1ED0079A9D8 /* Assets.xcassets */; };
 		00F4B7AC1CCDD1ED0079A9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F4B7AA1CCDD1ED0079A9D8 /* LaunchScreen.storyboard */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		00AB13A71CCE05990050DCE4 /* NSURLSession+SynchronousTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+SynchronousTask.swift"; sourceTree = "<group>"; };
+		00AB13A91CCE14770050DCE4 /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
+		00AB13AB1CCE21F60050DCE4 /* DiscoveryListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryListController.swift; sourceTree = "<group>"; };
+		00AB13AD1CCE23D30050DCE4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		00AB13AF1CCE27920050DCE4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		00F4B79E1CCDD1ED0079A9D8 /* ZhiHuSpecialColumn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiHuSpecialColumn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F4B7A11CCDD1ED0079A9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F4B7A81CCDD1ED0079A9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,10 +102,13 @@
 		00F4B7B31CCDD21A0079A9D8 /* Until */ = {
 			isa = PBXGroup;
 			children = (
+				00AB13AD1CCE23D30050DCE4 /* PageViewController.swift */,
 				00F4B7B41CCDD21A0079A9D8 /* AppAppearce.swift */,
 				00F4B7B51CCDD21A0079A9D8 /* HexColor.swift */,
 				00F4B7CA1CCDE8FD0079A9D8 /* MainTabBarController.swift */,
 				00AB13A71CCE05990050DCE4 /* NSURLSession+SynchronousTask.swift */,
+				00AB13A91CCE14770050DCE4 /* SegmentedController.swift */,
+				00AB13AF1CCE27920050DCE4 /* BaseViewController.swift */,
 			);
 			path = Until;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 				00F4B7BA1CCDD21A0079A9D8 /* ProfileInfoController.swift */,
 				00F4B7BB1CCDD21A0079A9D8 /* SessionListController.swift */,
 				00F4B7C31CCDD44F0079A9D8 /* DiscoveryController.swift */,
+				00AB13AB1CCE21F60050DCE4 /* DiscoveryListController.swift */,
 				00F4B7C51CCDD4770079A9D8 /* FollowsController.swift */,
 			);
 			path = ViewControllers;
@@ -286,12 +298,16 @@
 				00F4B7D31CCDF44F0079A9D8 /* PreviewController.swift in Sources */,
 				00F4B7D61CCDF9380079A9D8 /* LaunchImageController.swift in Sources */,
 				00F4B7BD1CCDD21A0079A9D8 /* HexColor.swift in Sources */,
+				00AB13AE1CCE23D30050DCE4 /* PageViewController.swift in Sources */,
+				00AB13AC1CCE21F60050DCE4 /* DiscoveryListController.swift in Sources */,
 				00F4B7D01CCDF3940079A9D8 /* WriteViewController.swift in Sources */,
 				00F4B7A21CCDD1ED0079A9D8 /* AppDelegate.swift in Sources */,
 				00AB13A81CCE05990050DCE4 /* NSURLSession+SynchronousTask.swift in Sources */,
 				00F4B7C41CCDD44F0079A9D8 /* DiscoveryController.swift in Sources */,
 				00F4B7C61CCDD4770079A9D8 /* FollowsController.swift in Sources */,
+				00AB13B01CCE27920050DCE4 /* BaseViewController.swift in Sources */,
 				00F4B7C11CCDD21A0079A9D8 /* ProfileInfoController.swift in Sources */,
+				00AB13AA1CCE14770050DCE4 /* SegmentedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

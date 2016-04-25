@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FollowsController: UIViewController {
+class FollowsController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

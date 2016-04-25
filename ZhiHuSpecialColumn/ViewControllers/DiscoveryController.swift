@@ -8,28 +8,56 @@
 
 import UIKit
 
-class DiscoveryController: UIViewController {
+
+class DiscoveryController: BaseViewController {
+    
+    let segmentControl: SegmentedController = {
+        let segmentControl = SegmentedController(frame: CGRect(x: 0, y: 10, width: 240, height: 36))
+        segmentControl.items = ["文章", "作者"]
+        segmentControl.border = UIColor.clearColor()
+        
+        return segmentControl
+    }()
+    
+    var pageController: MAPageViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+ 
+        segmentControl.addTarget(self, action: #selector(DiscoveryController.segmentControlUpdate(_:)), forControlEvents: .ValueChanged)
+        navigationItem.titleView = segmentControl
+        
+        
+        let articalsController = DiscoveryListController()
+        let authorsController = DiscoveryListController()
+        authorsController.view.backgroundColor = UIColor.redColor()
+        
+        
+        pageController = MAPageViewController(viewControllers:[articalsController, authorsController])
+        addChildViewController(pageController)
+        view.addSubview(pageController.view)
+        pageController.didMoveToParentViewController(self)
+        
+        
+        pageController.transitionCompleted = {index in
+            print(index)
+            self.segmentControl.selectedIndex = index
+        }
+        
     }
+    
+    
+    func segmentControlUpdate(sender: SegmentedController){
+        print(sender.selectedIndex)
+        
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
